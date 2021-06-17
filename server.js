@@ -1,7 +1,7 @@
 var fs = require('fs') 
 const Aoijs = require("aoi.js")
 const bot = new Aoijs.Bot({
-  token:"NzgwNzM4MDQ2MDU1Mjg0Nzk2.X7zc9w.6868z9F40SIuMfg-EV_KExNve68", //buraya token yazmayın .env de TOKEN yazan kısmın altı boş olmakta onun altına bot token yazmanız yeterlidir
+  token:process.env.TOKEN, //buraya token yazmayın .env de TOKEN yazan kısmın altı boş olmakta onun altına bot token yazmanız yeterlidir
   prefix: "!",
   mobile: true,//burayı false yaparsanız botunuz telefonda olarak gözükmez böyle durursa telefonda gözükür (hawli durur)
   fetchInvites: true//buraya ellemeyin
